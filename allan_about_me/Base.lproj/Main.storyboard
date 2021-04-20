@@ -1,24 +1,179 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lQe-Mu-c3z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--home-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="allan_about_me" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="People that allan fw" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cek-g7-fH9">
+                                <rect key="frame" x="133" y="438" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.57049356993707279" green="0.78602747877956314" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="home" image="homekit" catalog="system" id="SeB-Xm-gCJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="695.6521739130435" y="77.678571428571431"/>
+        </scene>
+        <!--Juice Wrld-->
+        <scene sceneID="CkC-rR-cmj">
+            <objects>
+                <viewController id="3Fu-eo-HdS" customClass="ViewController" customModule="allan_about_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DVn-ZU-68l">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="eHI-MY-17C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="e63f08341e5b9bcba03c4340fc7a26f1" translatesAutoresizingMaskIntoConstraints="NO" id="4bl-Zs-HZ0">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="384.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asm-7U-njw">
+                                        <rect key="frame" x="0.0" y="384.5" width="414" height="384.5"/>
+                                        <string key="text">Juice wrld the rap god, the one of - ney - thee best freestyler of all time. He is able to rap effortlessly, compared to other artist, such as Drake. In fact, Drake uses a ghostwriter, meanwhile, Juice wrld is all talent! </string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uCJ-KV-wvk"/>
+                        <color key="backgroundColor" red="1" green="0.86928084858639343" blue="0.69688647672463211" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="eHI-MY-17C" firstAttribute="top" secondItem="uCJ-KV-wvk" secondAttribute="top" id="OfU-Ef-fsx"/>
+                            <constraint firstItem="uCJ-KV-wvk" firstAttribute="bottom" secondItem="eHI-MY-17C" secondAttribute="bottom" id="f0i-cO-BpV"/>
+                            <constraint firstItem="eHI-MY-17C" firstAttribute="leading" secondItem="uCJ-KV-wvk" secondAttribute="leading" id="wiH-pi-md6"/>
+                            <constraint firstAttribute="trailing" secondItem="eHI-MY-17C" secondAttribute="trailing" id="wkV-wn-hx0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Juice Wrld" id="bfi-o5-swe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7KC-qW-puE" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="-308.03571428571428"/>
+        </scene>
+        <!--RiceGum-->
+        <scene sceneID="0MI-FZ-21N">
+            <objects>
+                <viewController id="nVr-99-Jr1" customClass="ViewController" customModule="allan_about_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FC9-Jk-zQ9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="UU3-9q-lJO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="180427-lorenz-ricegum-tease_vfxodg" translatesAutoresizingMaskIntoConstraints="NO" id="PpR-nP-WFD">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="426"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ricegum is one of the funniest youtubers of all time. And not only that, man's never took an Ls. He keep taking Ws." textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ON-ya-WDR">
+                                        <rect key="frame" x="0.0" y="426" width="414" height="426"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sTA-dI-gIN"/>
+                        <color key="backgroundColor" red="0.76256610792927804" green="0.50889624385920973" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UU3-9q-lJO" secondAttribute="bottom" id="9JR-XL-Fnt"/>
+                            <constraint firstItem="UU3-9q-lJO" firstAttribute="top" secondItem="sTA-dI-gIN" secondAttribute="top" id="Mqd-6J-uyC"/>
+                            <constraint firstAttribute="trailing" secondItem="UU3-9q-lJO" secondAttribute="trailing" id="ld0-MZ-UcH"/>
+                            <constraint firstItem="UU3-9q-lJO" firstAttribute="leading" secondItem="sTA-dI-gIN" secondAttribute="leading" id="zwu-eJ-OHk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="RiceGum" id="4Le-bg-Rek"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DFe-hc-r0a" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1531.8840579710145" y="424.55357142857139"/>
+        </scene>
+        <!--PoloG-->
+        <scene sceneID="vif-Wh-bpI">
+            <objects>
+                <viewController id="WMb-4T-RAQ" customClass="ViewController" customModule="allan_about_me" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0e-DA-yeg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VSK-eU-j6J">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="download" translatesAutoresizingMaskIntoConstraints="NO" id="AJd-GL-GLf">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="384.5"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GYf-XX-94J">
+                                        <rect key="frame" x="0.0" y="384.5" width="414" height="384.5"/>
+                                        <string key="text">Polo G is another good rapper. Hes from Chicago. Hes songs really be able the tuff life in the trenches. And just life in general.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KHf-Xs-BWi"/>
+                        <color key="backgroundColor" red="0.61060704908168972" green="1" blue="0.70924478734038487" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VSK-eU-j6J" secondAttribute="trailing" id="Grr-bP-AEo"/>
+                            <constraint firstItem="KHf-Xs-BWi" firstAttribute="bottom" secondItem="VSK-eU-j6J" secondAttribute="bottom" id="Ron-ef-Muk"/>
+                            <constraint firstItem="VSK-eU-j6J" firstAttribute="top" secondItem="KHf-Xs-BWi" secondAttribute="top" id="VP4-N4-Nu7"/>
+                            <constraint firstItem="VSK-eU-j6J" firstAttribute="leading" secondItem="KHf-Xs-BWi" secondAttribute="leading" id="rTZ-8A-sgt"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="PoloG" id="cpz-KP-okT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Thv-5l-7WU" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2392.753623188406" y="77.678571428571431"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="3wu-7K-h0r">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lQe-Mu-c3z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aNw-wG-P3b">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Zck-ao-29I"/>
+                        <segue destination="3Fu-eo-HdS" kind="relationship" relationship="viewControllers" id="8bB-lF-uKs"/>
+                        <segue destination="nVr-99-Jr1" kind="relationship" relationship="viewControllers" id="hwl-ij-Kpp"/>
+                        <segue destination="WMb-4T-RAQ" kind="relationship" relationship="viewControllers" id="TTa-Cc-2kH"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FsH-es-Y0l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-214.49275362318843" y="77.678571428571431"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="180427-lorenz-ricegum-tease_vfxodg" width="2560" height="1440"/>
+        <image name="download" width="259" height="194"/>
+        <image name="e63f08341e5b9bcba03c4340fc7a26f1" width="648" height="396"/>
+        <image name="homekit" catalog="system" width="128" height="106"/>
+    </resources>
 </document>
